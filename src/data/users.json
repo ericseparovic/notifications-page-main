@@ -1,0 +1,72 @@
+[
+    {
+        "avatar" : "../assets/avatar-mark-webber.webp",
+        "name": "Mark Weber",
+        "subject": "reacted to your recent post My first tournament today!",
+        "date": "1m ago",
+        "group": "",
+        "message": "",
+        "status": false,
+        "img": ""
+    },
+    {
+        "avatar" : "../assets/avatar-angela-gray.webp",
+        "name": "Angela Garay",
+        "subject": "followed you",
+        "date": "5m ago",
+        "group": "",
+        "message": "",
+        "status": false,
+        "img": ""
+    },
+    {
+        "avatar" : "../assets/avatar-jacob-thompson.webp",
+        "name": "Jacob Thompson",
+        "subject": "has joined your group",
+        "date": "1 day ago",
+        "group": "Chess Club",
+        "message": "",
+        "status": false,
+        "img": ""
+    },
+    {
+        "avatar" : "../assets/avatar-rizky-hasanuddin.webp",
+        "name": "Rizky Hasanduddin",
+        "subject": "sent you a private message",
+        "date": "5 days ago",
+        "group": "",
+        "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game",
+        "status": true,
+        "img": ""
+    },
+    {
+        "avatar" : "../assets/avatar-kimberly-smith.webp",
+        "name": "Kimberly Smith",
+        "subject": "commented on your picture",
+        "date": "1 week ago",
+        "group": "",
+        "message": "",
+        "status": true,
+        "img": "../assests/image-chess.webp"
+    },
+    {
+        "avatar" : "../assets/avatar-nathan-peterson.webp",
+        "name": "Nathan Peterson",
+        "subject": "reacted to your recent post 5 end-game strategies to increase your win rate",
+        "date": "2 week ago",
+        "group": "",
+        "message": "",
+        "status": true,
+        "img": ""
+    },
+    {
+        "avatar" : "../assets/avatar-anna-kim.webp",
+        "name": "Anna Kim",
+        "subject": "left the group Chess Club",
+        "date": "2 week ago",
+        "group": "",
+        "message": "",
+        "status": true,
+        "img": ""
+    }
+]
