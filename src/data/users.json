@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "avatar" : "../assets/avatar-mark-webber.webp",
         "name": "Mark Weber",
         "subject": "reacted to your recent post My first tournament today!",
@@ -10,6 +11,7 @@
         "img": ""
     },
     {
+        "id": 2,
         "avatar" : "../assets/avatar-angela-gray.webp",
         "name": "Angela Garay",
         "subject": "followed you",
@@ -20,6 +22,7 @@
         "img": ""
     },
     {
+        "id": 3,
         "avatar" : "../assets/avatar-jacob-thompson.webp",
         "name": "Jacob Thompson",
         "subject": "has joined your group",
@@ -30,6 +33,7 @@
         "img": ""
     },
     {
+        "id": 4,
         "avatar" : "../assets/avatar-rizky-hasanuddin.webp",
         "name": "Rizky Hasanduddin",
         "subject": "sent you a private message",
@@ -40,6 +44,7 @@
         "img": ""
     },
     {
+        "id": 5,
         "avatar" : "../assets/avatar-kimberly-smith.webp",
         "name": "Kimberly Smith",
         "subject": "commented on your picture",
@@ -50,6 +55,7 @@
         "img": "../assests/image-chess.webp"
     },
     {
+        "id": 6,
         "avatar" : "../assets/avatar-nathan-peterson.webp",
         "name": "Nathan Peterson",
         "subject": "reacted to your recent post 5 end-game strategies to increase your win rate",
@@ -60,6 +66,7 @@
         "img": ""
     },
     {
+        "id": 7,
         "avatar" : "../assets/avatar-anna-kim.webp",
         "name": "Anna Kim",
         "subject": "left the group Chess Club",
