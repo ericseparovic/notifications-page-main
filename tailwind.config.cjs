@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,jsx}"],
+  content: ["./src/**/*.{html,jsx}", "index.html"],
   theme: {
     fontFamily: {
       jakartaSans: ["Plus Jakarta Sans", "sans-serif"],

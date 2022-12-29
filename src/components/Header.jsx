@@ -10,7 +10,9 @@ export default function Header() {
         </span>
       </h2>
 
-      <p className="text-DarkGrayishBlue text-sm">Mark all as read</p>
+      <p className="text-DarkGrayishBlue text-sm cursor-pointer">
+        Mark all as read
+      </p>
     </header>
   );
 }

@@ -3,7 +3,7 @@ import Notificatons from "./components/Notificatons";
 
 function App() {
   return (
-    <div className="container mx-auto font-jakartaSans px-4">
+    <div className="containejr mx-auto font-jakartaSans px-4 max-w-xl bg-white py-2 sm:mt-10 rounded">
       <Header />
       <main>
         <Notificatons />
