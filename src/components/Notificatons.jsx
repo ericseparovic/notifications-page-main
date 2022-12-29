@@ -1,10 +1,10 @@
 import { useFetch } from "../Hooks/useFetch";
 import Notification from "./Notification";
+import { useState } from "react";
 
 const Notificatons = () => {
   const { data, isLoading, hasError } = useFetch("src/data/users.json");
-
-  console.log(data, isLoading, hasError);
+  const [count, setCount] = useState(0);
 
   if (isLoading) {
     return (
@@ -17,7 +17,7 @@ const Notificatons = () => {
   return (
     <>
       {data.map((data) => {
-        return <Notification data={data} />;
+        return <Notification data={data} key={data.id} />;
       })}
     </>
   );
