@@ -1,17 +1,37 @@
 import { useFetch } from "../Hooks/useFetch";
 import Notification from "./Notification";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Notificatons = ({ setCount }) => {
+  // Get data of json
   const { data, isLoading, hasError } = useFetch("src/data/users.json");
+  const [notifications, setNotifications] = useState(data);
 
-  const notificationsPending = data.filter((data) => {
-    if (!data.status) return data;
+  const notificationsPending = notifications.filter((notification) => {
+    if (!notification.status) return notification;
   });
+
+  // Change status notification
+  function changeStatus(id) {
+    const notificationsUpdate = notifications.filter((notification) => {
+      if (notification.id === id) {
+        notification.status = true;
+        return notification;
+      } else {
+        return notification;
+      }
+    });
+
+    setNotifications(notificationsUpdate);
+  }
 
   useEffect(() => {
     setCount(notificationsPending.length);
   }, [notificationsPending]);
+
+  useEffect(() => {
+    setNotifications(data);
+  }, [data]);
 
   if (isLoading) {
     return (
@@ -20,10 +40,17 @@ const Notificatons = ({ setCount }) => {
       </>
     );
   }
+
   return (
     <>
-      {data.map((data) => {
-        return <Notification data={data} key={data.id} />;
+      {notifications.map((notification) => {
+        return (
+          <Notification
+            notification={notification}
+            key={notification.id}
+            changeStatus={changeStatus}
+          />
+        );
       })}
     </>
   );

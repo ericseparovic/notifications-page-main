@@ -1,16 +1,19 @@
 import React from "react";
 
-const Notification = ({ data }) => {
+const Notification = ({ notification, changeStatus }) => {
   const { avatar, date, group, id, img, message, name, status, subject, tag } =
-    data;
+    notification;
 
   return (
     <article
-      className={
-        status
-          ? "mb-3 text-xs flex  p-2 gap-3 bg-white rounded-lg leading-5"
-          : "mb-3 text-xs flex  p-2 gap-3 bg-VeryLightGrayishBlue2 rounded-lg leading-5"
-      }
+      className={`
+        ${
+          status
+            ? "cursor-pointer mb-3 text-xs flex  p-2 gap-3 bg-white rounded-lg leading-5"
+            : "cursor-pointer mb-3 text-xs flex  p-2 gap-3 bg-VeryLightGrayishBlue2 rounded-lg leading-5"
+        }
+          `}
+      onClick={() => changeStatus(id)}
     >
       <div className="min-w-max">
         <img className="w-9" src={avatar} alt="avatar" />
@@ -20,8 +23,9 @@ const Notification = ({ data }) => {
           <div>
             <p
               className={
-                !status &&
-                "after:ml-1 after:content-[''] after:w-1.5 after:h-1.5 after:rounded-full after:bg-Red after:inline-block"
+                !status
+                  ? "after:ml-1 after:content-[''] after:w-1.5 after:h-1.5 after:rounded-full after:bg-Red after:inline-block"
+                  : undefined
               }
             >
               <span className="font-bold text-VeryDarkBlue pr-1">{name}</span>{" "}
