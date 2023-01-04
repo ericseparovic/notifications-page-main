@@ -1,9 +1,13 @@
 import Notification from "./Notification";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-const Notificatons = ({ setCount, data, isLoading }) => {
-  const [notifications, setNotifications] = useState(data);
-
+const Notificatons = ({
+  setCount,
+  data,
+  isLoading,
+  notifications,
+  setNotifications,
+}) => {
   const notificationsPending = notifications.filter((notification) => {
     if (!notification.status) return notification;
   });

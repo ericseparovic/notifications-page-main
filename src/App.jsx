@@ -7,12 +7,19 @@ function App() {
   const [count, setCount] = useState(0);
   // Get data of json
   const { data, isLoading, hasError } = useFetch("src/data/users.json");
+  const [notifications, setNotifications] = useState(data);
 
   return (
     <div className="containejr mx-auto font-jakartaSans px-4 max-w-xl bg-white py-2 sm:mt-10 rounded">
       <Header count={count} />
       <main>
-        <Notificatons setCount={setCount} data={data} isLoading={isLoading} />
+        <Notificatons
+          setCount={setCount}
+          data={data}
+          isLoading={isLoading}
+          notifications={notifications}
+          setNotifications={setNotifications}
+        />
       </main>
     </div>
   );
