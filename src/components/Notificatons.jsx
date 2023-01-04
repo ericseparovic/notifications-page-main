@@ -1,10 +1,7 @@
-import { useFetch } from "../Hooks/useFetch";
 import Notification from "./Notification";
 import { useEffect, useState } from "react";
 
-const Notificatons = ({ setCount }) => {
-  // Get data of json
-  const { data, isLoading, hasError } = useFetch("src/data/users.json");
+const Notificatons = ({ setCount, data, isLoading }) => {
   const [notifications, setNotifications] = useState(data);
 
   const notificationsPending = notifications.filter((notification) => {
