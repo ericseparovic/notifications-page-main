@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header({ count }) {
+export default function Header({ count, markAll }) {
   return (
     <header className="flex justify-between items-center h-20">
       <h2 className="text-lg font-bold">
@@ -10,7 +10,10 @@ export default function Header({ count }) {
         </span>
       </h2>
 
-      <p className="text-DarkGrayishBlue text-sm cursor-pointer">
+      <p
+        className="text-DarkGrayishBlue text-sm cursor-pointer"
+        onClick={markAll}
+      >
         Mark all as read
       </p>
     </header>
